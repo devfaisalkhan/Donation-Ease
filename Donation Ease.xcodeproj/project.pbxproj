@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		3A293025292BB6E3009CB58F /* Donation Ease */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Donation Ease"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A293028292BB6E3009CB58F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3A29302F292BB71C009CB58F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = User.h; path = "../../../hello world/hello world/User.h"; sourceTree = "<group>"; };
+		3A7CC890292BB77B00D9B2E1 /* DonationBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonationBox.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,9 @@
 		3A293027292BB6E3009CB58F /* Donation Ease */ = {
 			isa = PBXGroup;
 			children = (
+				3A29302F292BB71C009CB58F /* User.h */,
 				3A293028292BB6E3009CB58F /* main.cpp */,
+				3A7CC890292BB77B00D9B2E1 /* DonationBox.h */,
 			);
 			path = "Donation Ease";
 			sourceTree = "<group>";
