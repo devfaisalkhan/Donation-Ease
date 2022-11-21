@@ -1,4 +1,13 @@
-#include <iostream>
+// Donation Ease Project by Faisal Khan and Mian Sohaib
+//
+//
+//
+//
+//
+//
+//
+//
+
 #include "User.h"
 #include "DonationBox.h"
 
@@ -13,13 +22,16 @@ int main() {
     
     user.roughData();
 
+
     do {
+        
         menu();
         cout<<" enter choice "<< endl;
         cin>>option;
         switch (option) {
             case 1:
                 try {
+                    
 //                    string u,p;
 //                    cout<<"enter username"<< endl;
 //                    cin>>u;
@@ -109,6 +121,7 @@ int main() {
                     cout<< e<< endl;
                 }
             break;
+    
         }
        
     } while(option != 0);

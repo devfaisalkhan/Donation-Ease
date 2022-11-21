@@ -5,14 +5,10 @@
 //  Created by Faisal Khan on 21/11/2022.
 //
 
-
 #ifndef DonationBox_h
 #define DonationBox_h
 
-#include <iostream>
 #include "User.h"
-
-using  namespace std;
 
 struct Box {
     int id;
@@ -142,4 +138,6 @@ public:
         }
     }
 };
+
+
 #endif /* DonationBox_h */
