@@ -55,11 +55,27 @@ private:
             if(!isUserLoggedIn) {
                 throw "EXCEPTION: you must login first";
             }
+            string name, username;
+            stream.open("name.txt", ios::in);
+            while (!stream.eof() ) {
+                name = stream.get();
+            }
+            stream.close();
+
+            stream.open("username.txt", ios::in);
+            while (!stream.eof() ) {
+                username = stream.get();
+            }
+            stream.close();
+
+       
+            
+            
             cout<<"*****--USER PROFILE--******"<<    endl;
             
             cout<<"-------------------------------------------"<< endl;
-            cout<<" Name : "<<st.name<< endl;
-            cout<<" Username : "<<st.username<< endl;
+            cout<<" Name : "<<name<< endl;
+            cout<<" Username : "<<username<< endl;
             
             cout<<"-------------------------------------------"<< endl;
             

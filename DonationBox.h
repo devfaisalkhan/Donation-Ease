@@ -27,6 +27,38 @@ public:
         tail = NULL;
     }
   
+    // used bubble sort
+    void sort()
+    {
+        if(!isUserLoggedIn)
+            throw "EXCEPTION: you must login first";
+
+        if(!head)
+            throw "EXCEPTION: No Donation Box available";
+        
+        int swapped;
+        Box *current;
+        Box *last = NULL;
+      
+        do
+        {
+            swapped = 0;
+            current = head;
+      
+            while (current->next != last)
+            {
+                if (current->id > current->next->id)
+                {
+                    swap(current->id, current->next->id);
+                    swapped = 1;
+                }
+                current = current->next;
+            }
+            last = current;
+        }
+        while (swapped);
+    }
+    
     void create(int x, string location) {
         if(!isUserLoggedIn)
             throw "EXCEPTION: you must login first";
