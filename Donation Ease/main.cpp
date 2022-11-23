@@ -141,16 +141,16 @@ int main() {
 }
 
 void menu() {
-    cout<<"--------------------------"<< endl;
-    cout<<"| 1. Login                |"<< endl;
-    cout<<"| 2. Register             |"<< endl;
-    cout<<"| 3. User Profile         |"<< endl;
-    cout<<"| 4. Update User          |"<< endl;
-    cout<<"| 5. Forgot Password      |"<< endl;
-    cout<<"| 6. Create Box           |"<< endl;
-    cout<<"| 7. Show Boxes           |"<< endl;
-    cout<<"| 8. Delete Box           |"<< endl;
-    cout<<"| 9. Search Box           |"<< endl;
-    cout<<"| 10. Sort Box            |"<< endl;
-    cout<<"--------------------------"<< endl;
+    cout<<"---------------------------"<< endl;
+    cout<<"| 1.  Login                |"<< endl;
+    cout<<"| 2.  Register             |"<< endl;
+    cout<<"| 3.  User Profile         |"<< endl;
+    cout<<"| 4.  Update User          |"<< endl;
+    cout<<"| 5.  Forgot Password      |"<< endl;
+    cout<<"| 6.  Create Box           |"<< endl;
+    cout<<"| 7.  Show Boxes           |"<< endl;
+    cout<<"| 8.  Delete Box           |"<< endl;
+    cout<<"| 9.  Search Box           |"<< endl;
+    cout<<"| 10. Sort Box             |"<< endl;
+    cout<<"---------------------------"<< endl;
 }
