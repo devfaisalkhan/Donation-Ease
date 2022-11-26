@@ -34,13 +34,15 @@ private:
             if(!isUserLoggedIn)
                 throw "EXCEPTION: you must login first";
             
-            
+            cin.ignore();
             cout<<"name"<< endl;
-            cin>> st.name;
+            getline(cin, st.name);
+            
             cout<<"username"<< endl;
-            cin>> st.username;
+            getline(cin, st.username);
+            
             cout<<"password"<< endl;
-            cin>> st.password;
+            getline(cin, st.password);
               
         }
     
@@ -55,27 +57,13 @@ private:
             if(!isUserLoggedIn) {
                 throw "EXCEPTION: you must login first";
             }
-            string name, username;
-            stream.open("name.txt", ios::in);
-            while (!stream.eof() ) {
-                name = stream.get();
-            }
-            stream.close();
 
-            stream.open("username.txt", ios::in);
-            while (!stream.eof() ) {
-                username = stream.get();
-            }
-            stream.close();
-
-       
-            
             
             cout<<"*****--USER PROFILE--******"<<    endl;
             
             cout<<"-------------------------------------------"<< endl;
-            cout<<" Name : "<<name<< endl;
-            cout<<" Username : "<<username<< endl;
+            cout<<" Name : "<<st.name<< endl;
+            cout<<" Username : "<<st.username<< endl;
             
             cout<<"-------------------------------------------"<< endl;
             
@@ -91,7 +79,7 @@ private:
             getline(cin, st.username);
             
             cout<<" Password "<< endl;
-            getline(cin, st.name);
+            getline(cin, st.password);
           
 
             stream.open("name.txt", ios::out);

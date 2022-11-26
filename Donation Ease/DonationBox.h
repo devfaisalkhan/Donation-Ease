@@ -57,6 +57,8 @@ public:
             last = current;
         }
         while (swapped);
+        
+        cout<<"sorted"<< endl;
     }
     
     void create(int x, string location) {
